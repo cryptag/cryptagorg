@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>CrypTag</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,9 +40,6 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap
-                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,9 +71,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
-                        <p class="intro-text">A free, responsive, one page Bootstrap theme.
-                            <br>Created by Start Bootstrap.</p>
+                        <h1 class="brand-heading">CrypTag</h1>
+                        <p class="intro-text">
+                          Secure mobile and desktop apps for
+                          activists, journalists, and you.
+                        </p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -90,10 +89,85 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                <blockquote class="text-justify">
+                  "By understanding the mechanisms through which our
+                  privacy is violated, we can win here. We can
+                  guarantee for all people equal protection against
+                  unreasonable search through universal laws, but only
+                  if the technical community is willing to face the
+                  threat and commit to implementing over-engineered
+                  solutions. In the end, we must enforce a principle
+                  whereby the only way the powerful may enjoy privacy
+                  is when it is the same kind shared by the ordinary:
+                  one enforced by the laws of nature, rather than the
+                  policies of man." --Edward Snowden
+                </blockquote>
+                <br>
+
+                <h2>About CrypTag</h2>
+                <p>
+                  CrypTag is an organization dedicated to protecting
+                  the privacy of every Internet user -- beginning with
+                  those most vulnerable.  We are building easy-to-use
+                  mobile and desktop apps, as well as tools for
+                  software developers to make their own apps built on
+                  CrypTag's technology.
+                </p>
+                <p>
+                  Safely collaborate and communicate with CrypTag's
+                  free, open source software built to protect your
+                  privacy.
+                </p>
+
+                <h3>Which apps are being built with CrypTag?</h3>
+                <p>
+                  The first app intended for a wide audience is
+                  CryptWiki, a secure wiki app that can store the wiki
+                  pages you create in Dropbox, any other file syncing
+                  service, <a href="https://apps.sandstorm.io/app/mkq3a9jyu6tqvzf7ayqwg620q95p438ajs02j0yx50w2aav4zra0">Sandstorm</a>,
+                  or on a desktop or server you control. You'll be
+                  able to securely share each wiki with others and
+                  allow them to make edits, too. CryptWiki currently
+                  exists in prototype form. (If you're a developer who
+                  wants to
+                  help, <a href="mailto:steve@tryingtobeawesome.com">let
+                  us know</a>!)
+                </p>
+                <p>
+                  For advanced users,
+                  several <a href="https://github.com/elimisteve/cryptag/tree/master/cmd">command
+                  line apps</a> already exist, such
+                  as <code>cpass</code>, a password manager,
+                  and <code>cryptag</code>, a general-purpose file and
+                  data storage tool that lets you store your data just
+                  about anywhere and fetch them by tag.
+                </p>
+
+                <h3>What Makes CrypTag Unique?</h3>
+                <p>
+                  Apps built with CrypTag can store their data just
+                  about anywhere -- Dropbox, Sandstorm, your own
+                  server, or any "cloud" file-syncing service.  Since
+                  any computer on the Internet might be running
+                  software that enables you to communicate and
+                  collaborate with others, this makes it almost
+                  impossible to censor or block people from using any
+                  CrypTag app.
+                </p>
+                <p>
+                  Plus, all your files, wiki pages, chat messages, and
+                  other data are encrypted before leaving your device,
+                  so you don't have to trust whoever's storing your
+                  stuff.
+                </p>
+                <p>
+                  And since CrypTag supports the
+                  <a href="https://www.torproject.org/">Tor</a>
+                  anonymity network, you can use CrypTag apps without
+                  revealing to anyone monitoring your Internet
+                  connection that you're doing so, nor who you're
+                  communicating with.
+                </p>
             </div>
         </div>
     </section>
@@ -103,9 +177,22 @@
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                    <h2>Download CrypTag Developer Beta</h2>
+                    <p>If you have Go already installed, run</p>
+                    <p>
+                      <code>$ go get github.com/elimisteve/cryptag/cmd/cryptag</code>
+                    </p>
+                    <p>
+                      To install <code>cpass</code>, a CrypTag-based
+                      command line password manager, run
+                    </p>
+                    <p>
+                      <code>$ go get github.com/elimisteve/cryptag/cmd/cpass</code>
+                    </p>
+                    <p>See
+                      <a href="https://github.com/elimisteve/cryptag#getting-started-with-cryptpass">Getting Started with cpass</a>.
+                    </p>
+                    <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a> -->
                 </div>
             </div>
         </div>
@@ -115,19 +202,18 @@
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                <h2>Contact Us</h2>
+                <p>If you're passionate about privacy, we want to hear from you.</p>
+                <p>Got an idea for an app you want for yourself, or that you'd like to build?  Whether you're an activist, journalist, developer, or concerned citizen, your persective is valuable to us.</p>
+                <p>
+                  <a href="mailto:steve@tryingtobeawesome.com">Email us here</a>, or contact us on Twitter or GitHub:
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://twitter.com/_cryptag_" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        <a href="https://github.com/elimisteve/cryptag" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
                     </li>
                 </ul>
             </div>
@@ -135,12 +221,12 @@
     </section>
 
     <!-- Map Section -->
-    <div id="map"></div>
+    <!-- <div id="map"></div> -->
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+            <p>Copyright &copy; Steve Phillips 2016</p>
         </div>
     </footer>
 
