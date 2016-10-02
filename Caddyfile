@@ -1,2 +1,6 @@
-https://www.cryptag.org
-root .
+www.cryptag.org {
+    root .
+}
+cryptag.org {
+    redir https://www.cryptag.org{uri}
+}
