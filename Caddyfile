@@ -4,3 +4,7 @@ www.cryptag.org {
 cryptag.org {
     redir https://www.cryptag.org{uri}
 }
+
+share.cryptag.org {
+    proxy / localhost:8000
+}
