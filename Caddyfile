@@ -1,5 +1,9 @@
 www.cryptag.org {
     root .
+
+    redir 302 {
+        /donate    https://www.patreon.com/cryptag
+    }
 }
 cryptag.org {
     redir https://www.cryptag.org{uri}
