@@ -1,0 +1,15 @@
+acbuild begin
+acbuild set-name github.com/cryptag/cryptagorg
+acbuild port add www tcp 80
+acbuild port add www tcp 443
+acbuild label add arch amd64
+acbuild label add os linux
+acbuild annotation add authors "Steve Phillips <steve@tryingtobeawesome.com>"
+acbuild copy caddy /bin/caddy
+acbuild set-exec -- /bin/caddy -conf /app/Caddyfile
+#acbuild run -- ulimit -n 8192
+acbuild mount add site /app
+acbuild set-working-directory /app
+acbuild mount add dotcaddy /.caddy
+acbuild write --overwrite cryptagorg-linux-amd64.aci
+acbuild end
